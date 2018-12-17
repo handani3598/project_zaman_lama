@@ -343,34 +343,33 @@ hr {
   flex: 1 1 200px;
 }
 
-#news1 {
+.news1 {
   background-image: url('images/news1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#news2 {
+.news2 {
   background-image: url('images/news2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#news3 {
+.news3 {
   background-image: url('images/news3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#news4 {
+.news4 {
   background-image: url('images/news4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 
 
 .news_title {
