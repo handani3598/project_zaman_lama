@@ -1,7 +1,7 @@
 jQuery(function($) {
   var items = $(".module");
   var numItems = items.length;
-  var perPage = 4;
+  var perPage = 6;
   // Only show the first 2 (or first `per_page`) items initially.
   items.slice(perPage).hide();
   // Now setup the pagination using the `#pagination` div.
