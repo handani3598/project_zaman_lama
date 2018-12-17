@@ -1118,10 +1118,10 @@ span.ellipse.clickable {
 	cursor: default;
 }
 
-.prev, .next{
+/* .prev, .next{
   margin-top: 500px;
 }
-
+ */
 
 .caption{
   position: absolute;
