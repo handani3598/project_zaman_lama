@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open('GET', 'https://handani3598.github.io/uni.json');
+request.open('GET', 'https://handani3598.github.io/json/uni.json');
 request.onload = function(){
   var uni = JSON.parse(request.responseText);
   University(uni);
