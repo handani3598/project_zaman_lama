@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Universities</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/uni.js" charset="utf-8"></script>
   </head>
   <body>
     <div class ="home_nav_top">
@@ -30,205 +32,210 @@
       <h1 id="u-title">UNIVERSITIES</h1>
 
       <div class="buttons">
-        <a class="btn perlisbtn">PERLIS</a>
-        <a class="btn kedahbtn">KEDAH</a>
-        <a class="btn perakbtn">PERAK</a>
-        <a class="btn penangbtn">PENANG</a>
-        <a class="btn sembilanbtn">NEGERI SEMBILAN</a>
-        <a class="btn kelantanbtn">KELANTAN</a>
-        <a class="btn terengganubtn">TERENGGANU</a>
-        <a class="btn pahangbtn">PAHANG</a>
-        <a class="btn melakabtn">MELAKA</a>
-        <a class="btn selangorbtn">SELANGOR</a>
-        <a class="btn johorbtn">JOHOR</a>
-        <a class="btn sabahbtn">SABAH</a>
-        <a class="btn sarawakbtn">SARAWAK</a>
+        <a class="btn" value="Perlis">PERLIS</a>
+        <a class="btn" value="Kedah">KEDAH</a>
+        <a class="btn" value="Perak">PERAK</a>
+        <a class="btn" value="Penang">PENANG</a>
+        <a class="btn" value="Negeri Sembilan">NEGERI SEMBILAN</a>
+        <a class="btn" value="Kelantan">KELANTAN</a>
+        <a class="btn" value="Terengganu">TERENGGANU</a>
+        <a class="btn" value="Pahang">PAHANG</a>
+        <a class="btn" value="Melaka">MELAKA</a>
+        <a class="btn" value="Selangor">SELANGOR</a>
+        <a class="btn" value="Kuala Lumpur">KUALA LUMPUR</a>
+        <a class="btn" value="Johor">JOHOR</a>
+        <a class="btn" value="Sarawak">SARAWAK</a>
+        <a class="btn" value="Sabah">SABAH</a>
+        <a class="btn" value="malaysia">ALL</a>
       </div>
 
+      <hr id="hrline">
+
+      <div class="maps">
+        <img id="map" src="map/malaysia.png" alt="">
+      </div>
+
+
     <div class="slider-background">
-      <div class="horizontal-scroll-wrapper">
 
-        <div class="thumb Selangor">
-          <a href="http://www.um.edu.my">
-            <img src="images/u_UM.png" alt="UM-logo">
-            <h3>University of Malaya</h3>
-            <p>Knowledge is the Source of Progress</p>
-            <p>Kuala Lumpur, Malaysia</p>
+        <div class="horizontal-scroll-wrapper">
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Selangor Pahang Johor">
-          <a href="http://www.iium.edu.my">
-            <img src="images/u_IIUM.png" alt="IIUM-logo">
-            <h3>International Islamic University Malaysia</h3>
-            <p>The Garden of Knowledge and Virtue</p>
-            <p>	Gombak, Kuala Lumpur, Kuantan, Pagoh, Gambang</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Selangor">
-          <a href="http://www.ukm.my">
-            <img src="images/u_UKM.png" alt="UKM-logo">
-            <h3>Universiti Kebangsaan Malaysia</h3>
-            <p>Inspiring Futures, Nurturing Possibilities</p>
-            <p>Bandar Baru Bangi, Selangor</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Kelantan">
-          <a href="http://www.umk.edu.my">
-            <img src="images/u_UMK.png" alt="UMK-logo">
-            <h3>Universiti Malaysia Kelantan</h3>
-            <p>Entrepreneurship Is Our Thrust</p>
-            <p>Pengkalan Chepa, Bachok, Jeli, Kelantan</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Pahang">
-          <a href="http://www.ump.edu.my">
-            <img src="images/u_UMP.png" alt="UMP-logo">
-            <h3>Universiti Malaysia Pahang</h3>
-            <p>Engineering Technology Creativity</p>
-            <p>Pekan and Gambang, Pahang</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
+          </a>
+        </div>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Perlis">
-          <a href="http://www.unimap.edu.my">
-            <img src="images/u_UNIMAP.png" alt="UNIMAP-logo">
-            <h3>Universiti Malaysia Perlis</h3>
-            <p>Knowledge, Sincerity, and Excellence</p>
-            <p>Kangar and Arau, Perlis</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Sabah">
-          <a href="http://www.ums.edu.my">
-            <img src="images/u_UMS.png" alt="UMS-logo">
-            <h3>Universiti Malaysia Sabah</h3>
-            <p>Strive to Excel</p>
-            <p>Kota Kinabalu, Sabah</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Sarawak">
-          <a href="http://www.unimas.edu.my">
-            <img src="images/u_UNIMAS.png" alt="UNIMAS-logo">
-            <h3>Universiti Malaysia Sarawak</h3>
-            <p>Contemporary and Forward Looking</p>
-            <p>	Kota Samarahan, Sarawak</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Terengganu">
-          <a href="http://www.umt.edu.my">
-            <img src="images/u_UMT.png" alt="UMT-logo">
-            <h3>Universiti Malaysia Terengganu</h3>
-            <p>Ocean of Discoveries For Global Sustainability</p>
-            <p>Kuala Nerus, Terengganu</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
+          </a>
+        </div>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Perak">
-          <a href="http://www.upsi.edu.my">
-            <img src="images/u_UPSI.png" alt="UPSI-logo">
-            <h3>Universiti Pendidikan Sultan Idris</h3>
-            <p>Knowledge is the Beacon of Pure Character</p>
-            <p>Tanjung Malim, Perak</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Selangor">
-          <a href="http://www.upnm.edu.my">
-          <img src="images/u_UPNM.png" alt="UPNM-logo">
-            <h3>Universiti Pertahanan Nasional Malaysia</h3>
-            <p>Duty, Honour, Integrity</p>
-            <p>Kuala Lumpur, Malaysia</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Selangor Sarawak">
-          <a href="http://www.upm.edu.my">
-            <img src="images/u_UPM.jpg" alt="UPM-logo">
-            <h3>Universiti Putra Malaysia</h3>
-            <p>With Knowledge We Serve</p>
-            <p>Serdang, Selangor and Bintulu, Sarawak</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Sembilan Selangor">
-          <a href="http://www.usim.edu.my">
-            <img src="images/u_USIM.png" alt="USIM-logo">
-            <h3>Universiti Sains Islam Malaysia</h3>
-            <p>Knowledgeable, Disciplined and Devout</p>
-            <p>Nilai, Negeri Sembilan and Kuala Lumpur</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
+          </a>
+        </div>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Penang Kelantan">
-          <a href="http://www.usm.my">
-            <img src="images/u_USM.png" alt="USM-logo">
-            <h3>Universiti Sains Malaysia</h3>
-            <p>We Lead</p>
-            <p>Gelugor and Nibong Tebal, Penang, and Kubang Kerian, Kelantan</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-
-        <div class="thumb Terengganu">
-          <a href="http://www.unisza.edu.my">
-            <img src="images/u_UNISZA.png" alt="">
-            <h3>Universiti Sultan Zainal Abidin</h3>
-            <p>Knowledge for the Benefit of Humanity</p>
-            <p>Kuala Terengganu and Besut, Terengganu</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Melaka">
-          <a href="http://www.utem.edu.my">
-            <img src="images/u_UTEM.png" alt="UTEM-logo">
-            <h3>Universiti Teknikal Malaysia Melaka</h3>
-            <p>Excellence Through Competency</p>
-            <p>Durian Tunggal, Melaka</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Johor Selangor">
-          <a href="http://www.utm.edu.my">
-            <img src="images/u_UTM.png" alt="UTM-logo">
-            <h3>Universiti Teknologi Malaysia</h3>
-            <p>In the Name of God for Mankind</p>
-            <p>Skudai, Johor and Kuala Lumpur</p>
-        </a>
-        </div>
-
-        <div class="thumb Selangor">
-          <a href="http://www.uitm.edu.my">
-            <img src="images/u_UITM.png" alt="UITM-logo">
-            <h3>Universiti Teknologi MARA</h3>
-            <p>Endeavour, Religious, Dignified</p>
-            <p>Shah Alam, Selangor</p>
+        <div class="thumb">
+          <a class="link">
+            <img class="logo" src="">
+            <h3 class="name"></h3>
+            <p class="tagline"></p>
+            <p class="location"></p>
           </a>
         </div>
 
-        <div class="thumb Johor">
-          <a href="http://www.uthm.edu.my">
-            <img src="images/u_UTHM.png" alt="UTHM-logo">
-            <h3>Universiti Tun Hussein Onn Malaysia</h3>
-            <p>With Wisdom, We Explore</p>
-            <p>Batu Pahat, Johor</p>
-          </a>
-        </div>
-
-
-        <div class="thumb Kedah Selangor">
-          <a href="http://www.uum.edu.my">
-            <img src="images/u_UUM.png" alt="UUM-logo">
-            <h3>Universiti Utara Malaysia</h3>
-            <p>Scholarship, Virtue, Service</p>
-            <p>Sintok, Kedah and Kuala Lumpur</p>
-          </a>
-        </div>
       </div>
     </div>
   </div>
