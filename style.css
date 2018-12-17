@@ -974,6 +974,11 @@ form {
 
 #con {
   margin-left: 0px;
+  font-family: 'Fredoka One';
+  letter-spacing: 5px;
+  background: -webkit-linear-gradient(#5e6bb0, #3a4371);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 
 
