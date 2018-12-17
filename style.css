@@ -778,6 +778,78 @@ form {
   height: 90%;
 }
 
+
+ul.simple-pagination {
+	list-style: none;
+}
+
+.simple-pagination {
+  float: right;
+	display: inline;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.simple-pagination ul {
+	list-style: none;
+	padding: 0;
+}
+
+.simple-pagination li {
+	list-style: none;
+	padding: 0;
+  margin-right: 15px;
+	float: left;
+
+}
+span.ellipse.clickable {
+	cursor: pointer;
+}
+
+.ellipse input {
+	width: 3em;
+}
+
+.light-theme span {
+	cursor:pointer;
+}
+
+.light-theme a, .light-theme span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.light-theme a:hover, .light-theme li:not(.disabled):not(.active) span:hover {
+	text-decoration: none;
+	background: #FCFCFC;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.light-theme .current {
+  background-color: #fb9d0d;
+  color: white;
+  border-radius: 5px;
+}
+
+.light-theme .ellipse {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+.prev, .next{
+  margin-top: 500px;
+}
+
+
 .caption{
   position: absolute;
   top: 215px;
@@ -801,17 +873,18 @@ form {
 }
 
 .album-container img{
-  width: 15%;
-  padding-left: 10px;
-}
-
-#uia {
-  width: 25%;
+  width: 7%;
+  padding: 15px;
+box-shadow: 5px 5px 18px #888888;
 }
 
 .album-container {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  width: 90%
+}
 
+.album-container a{
+  text-decoration: none;
 }
 
 #al-title {
