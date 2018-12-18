@@ -183,7 +183,7 @@ nav.fill ul li a:hover:after {
     display: none;
 }
 
-.prev, .next {
+.prev1, .next1 {
 
   cursor: pointer;
   position: absolute;
@@ -199,12 +199,12 @@ nav.fill ul li a:hover:after {
 }
 
 
-.next {
+.next1 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev1:hover, .next1:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -1117,10 +1117,10 @@ span.ellipse.clickable {
 	cursor: default;
 }
 
-/* .prev, .next{
+.prev, .next{
   margin-top: 500px;
 }
- */
+
 
 .caption{
   position: absolute;
